@@ -1,0 +1,53 @@
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 6fr;
+}
+#topBar{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-items: center;
+    background-color: rgb(21,96,130);
+    font-size: 6vh;
+    font-weight: 500;
+    color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+}
+#menuButton{
+    background-color: red;
+    height: 80%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    z-index: 2;
+}
+#title{
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#sideBar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-items: center;
+    background-color:red;
+    visibility: hidden;
+}
+#pageBody{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    border: 5px solid gray;
+    border-radius: 10px;
+    z-index: -1;
+    margin: 1%;
+}
+
