@@ -1,0 +1,25 @@
+#container{
+    display: grid;
+    grid-template-rows: 1fr 5fr 2fr;
+    height: 100%;
+}
+
+#quizName{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: larger;
+    background-color: aqua;
+    align-content: center;
+}
+
+#question{
+    grid-row: 2,3;
+    font-size: larger;
+    align-content: center;
+}
+
+#answerSection{
+    grid-row: 3,4;
+    align-content: center;
+    color: black;
+}
